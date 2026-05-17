@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Goodwin Wiltshires</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home" class="brand">Goodwin Wiltshires</a>
+        <div class="nav-links">
+          <a href="#story">Story</a>
+          <a href="#rams">Sheep</a>
+          <a href="#ram-viewer">3D Ram</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-contact" href="tel:+64211234567">021 123 4567</a>
+      </nav>
+
+      <div class="hero-content">
+        <h1>GOODWIN</h1>
+        <p>Keeping an eye on the flock.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="no-section" aria-labelledby="no-heading">
+        <h2 id="no-heading" class="sr-only">Low intervention Wiltshire sheep</h2>
+        <div class="no-wheel" style="--active-index: 2">
+          <span class="no-word" aria-hidden="true">No</span>
+          <ul class="promise-list">
+            <li>Shearing</li>
+            <li>Crutching</li>
+            <li class="active">Flystrike</li>
+            <li>Casts</li>
+            <li>Bearings</li>
+            <li>Docking</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-copy">
+          <p class="eyebrow">Hawke's Bay bred</p>
+          <h2>Our Story</h2>
+          <p>
+            Located in the beautiful Hawke's Bay, we are dedicated to breeding
+            top-quality Wiltshire sheep that are efficient, sustainable, and
+            low-maintenance. Our stud embraces innovation, practical selection,
+            and progressive farming technology to improve the traits that
+            matter most.
+          </p>
+          <p>
+            We remain committed to continuous improvement, producing sheep that
+            require fewer interventions while delivering strong productivity,
+            profitability, and environmental stewardship.
+          </p>
+        </div>
+        <div class="story-image">
+          <img src="assets/story-ewe-lamb.jpg" alt="Wiltshire ewe with lamb standing in pasture">
+        </div>
+      </section>
+
+      <section class="ram-gallery" id="rams" aria-label="Stud sheep gallery">
+        <figure class="gallery-card card-left">
+          <img src="assets/ram-left.jpg" alt="Wiltshire ram standing side-on in pasture">
+        </figure>
+        <figure class="gallery-card card-feature">
+          <img src="assets/ram-feature.jpg" alt="Feature Wiltshire ram standing in green grass">
+        </figure>
+        <figure class="gallery-card card-right">
+          <img src="assets/flock-right.jpg" alt="Small flock of Wiltshire sheep in a paddock">
+        </figure>
+      </section>
+
+      <section class="ram-viewer-section" id="ram-viewer">
+        <div class="viewer-copy">
+          <p class="eyebrow">Stud ram preview</p>
+          <h2>See the shape before you visit.</h2>
+          <p>
+            Balance, bone, stance, and shedding strength are easier to judge
+            when a sire can be seen from more than one angle.
+          </p>
+          <button class="viewer-button" type="button" data-reset-view>Reset view</button>
+        </div>
+        <div class="viewer-stage" aria-label="Interactive 3D ram viewer">
+          <canvas id="ram-canvas"></canvas>
+          <img class="viewer-reference" src="assets/generic-ram-reference.jpg" alt="Temporary generic ram reference">
+          <p class="viewer-status sr-only" data-viewer-status>Loading preview</p>
+        </div>
+      </section>
+
+      <section class="feature-section" id="faq">
+        <div class="feature-image">
+          <img src="assets/lamb-feature.jpg" alt="Wiltshire lamb looking toward the camera in a paddock">
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">Easy-care genetics</p>
+          <h2>Built for fewer jobs and better days.</h2>
+          <p>
+            Our breeding focus is simple: sound sheep, strong shedding, natural
+            mothering, and animals that fit real farming systems. Visitors and
+            ram enquiries are welcome.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Goodwin Wiltshires</p>
+          <h2>Ram enquiries and farm visits</h2>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:goodwin@example.co.nz">goodwin@example.co.nz</a>
+          <a href="tel:+64211234567">021 123 4567</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Goodwin Wiltshires. All rights reserved.</p>
+      <p class="photo-credit">
+        Placeholder ram photo: Keystone International, CC BY 2.0, via Wikimedia Commons.
+      </p>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js"
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+    <script type="module" src="ram-viewer.js"></script>
+  </body>
+</html>
