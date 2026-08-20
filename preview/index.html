@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17351f">
+    <meta name="description" content="Goodwin Wiltshires — low-intervention Wiltshire sheep bred in Hawke's Bay, New Zealand.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Goodwin Wiltshires | Preview</title>
+    <link rel="preload" as="image" href="../assets/hero-sheep.jpg" fetchpriority="high">
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "../vendor/three/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="hero" id="home">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home" class="brand" aria-label="Goodwin Wiltshires home">
+          <span class="brand-mark" aria-hidden="true">GW</span>
+          <span>Goodwin Wiltshires</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#story">Story</a>
+          <a href="#sheep">Sheep</a>
+          <a href="#viewer">3D ram</a>
+          <a href="#enquiries">Enquiries</a>
+        </div>
+      </nav>
+
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">Hawke's Bay · New Zealand</p>
+        <h1>GOODWIN</h1>
+        <div class="hero-lower">
+          <p class="hero-lead">Wiltshire sheep bred to do more of the work themselves.</p>
+          <a class="text-link light" href="#story">Meet the flock <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="promise-section" aria-labelledby="promise-heading">
+        <div class="section-shell promise-grid">
+          <div>
+            <p class="eyebrow light">Low-intervention breeding</p>
+            <h2 id="promise-heading">Fewer jobs.<br>More sheep doing the work.</h2>
+          </div>
+          <div class="promise-wheel" data-promise-wheel>
+            <p class="promise-prefix">Breeding to reduce</p>
+            <ul class="promise-list">
+              <li class="active">shearing</li>
+              <li>crutching</li>
+              <li>flystrike risk</li>
+              <li>casting</li>
+              <li>bearings</li>
+              <li>docking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="section-shell split-layout">
+          <div class="story-copy content-copy">
+            <p class="eyebrow">Hawke's Bay bred</p>
+            <h2>Practical Wiltshires for practical farms.</h2>
+            <p>
+              Goodwin Wiltshires is focused on sheep that fit real farming systems: strong shedding,
+              sound structure, natural mothering and useful performance without adding more jobs to the calendar.
+            </p>
+            <p>
+              Selection is aimed at steady improvement rather than fashion — keeping the traits that make
+              Wiltshires valuable while producing robust sheep that are straightforward to farm.
+            </p>
+          </div>
+          <figure class="media-frame story-image">
+            <img src="../assets/story-ewe-lamb.jpg" alt="Wiltshire ewe with lamb standing in pasture" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </section>
+
+      <section class="sheep-section" id="sheep" aria-labelledby="sheep-heading">
+        <div class="section-shell">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow light">The flock</p>
+              <h2 id="sheep-heading">Built around the traits that matter.</h2>
+            </div>
+            <p>
+              Shedding, soundness, maternal ability and useful commercial performance are considered together —
+              not as separate goals.
+            </p>
+          </div>
+
+          <div class="ram-gallery" aria-label="Goodwin Wiltshires sheep gallery">
+            <figure class="gallery-card gallery-small">
+              <img src="../assets/ram-left.jpg" alt="Wiltshire ram standing side-on in pasture" loading="lazy" decoding="async">
+            </figure>
+            <figure class="gallery-card gallery-feature">
+              <img src="../assets/ram-feature.jpg" alt="Feature Wiltshire ram standing in green grass" loading="lazy" decoding="async">
+            </figure>
+            <figure class="gallery-card gallery-small">
+              <img src="../assets/flock-right.jpg" alt="Small flock of Wiltshire sheep in a paddock" loading="lazy" decoding="async">
+            </figure>
+          </div>
+
+          <div class="trait-grid" aria-label="Breeding focus">
+            <article><span>01</span><h3>Shedding</h3><p>Strong natural shedding to reduce reliance on shearing and crutching.</p></article>
+            <article><span>02</span><h3>Soundness</h3><p>Useful structure, feet and movement that suit working farm conditions.</p></article>
+            <article><span>03</span><h3>Mothering</h3><p>Capable ewes with the instincts and constitution to get on with the job.</p></article>
+            <article><span>04</span><h3>Performance</h3><p>Selection that keeps productivity in view while pushing intervention down.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="viewer-section" id="viewer" aria-labelledby="viewer-heading">
+        <div class="section-shell viewer-grid">
+          <div class="viewer-copy content-copy">
+            <p class="eyebrow light">Interactive ram view</p>
+            <h2 id="viewer-heading">See the shape before you visit.</h2>
+            <p>
+              Look around a ram from more than one angle without making the rest of the website heavy.
+              The interactive viewer only downloads after you choose to open it.
+            </p>
+            <div class="viewer-actions">
+              <button class="button button-primary" type="button" data-load-viewer>Open 3D ram preview</button>
+              <button class="button button-quiet" type="button" data-reset-view hidden>Reset view</button>
+            </div>
+            <p class="viewer-note">The current preview is a lightweight stand-in. A scanned GLB of a stud ram can replace it without changing this page.</p>
+          </div>
+
+          <div class="viewer-stage" data-viewer-stage>
+            <img class="viewer-poster" src="../assets/ram-feature.jpg" alt="Wiltshire ram used as the 3D viewer poster" loading="lazy" decoding="async">
+            <div class="viewer-poster-shade" aria-hidden="true"></div>
+            <div class="viewer-poster-label" aria-hidden="true">
+              <span>Interactive</span>
+              <strong>3D ram</strong>
+            </div>
+            <canvas id="ram-canvas" hidden aria-label="Interactive 3D ram preview. Drag to rotate and scroll to zoom."></canvas>
+            <p class="viewer-status" data-viewer-status aria-live="polite">3D loads only when requested.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section" aria-labelledby="easy-care-heading">
+        <div class="section-shell split-layout reverse-on-mobile">
+          <figure class="media-frame feature-image">
+            <img src="../assets/lamb-feature.jpg" alt="Wiltshire lamb looking toward the camera in a paddock" loading="lazy" decoding="async">
+          </figure>
+          <div class="feature-copy content-copy">
+            <p class="eyebrow">Easy-care genetics</p>
+            <h2 id="easy-care-heading">Less intervention is a breeding objective, not a slogan.</h2>
+            <p>
+              A sheep can shed and still need to be a good sheep. The aim is to combine easy-care traits with
+              the fundamentals: survival, feet, structure, mothering and performance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="enquiries-section" id="enquiries" aria-labelledby="enquiries-heading">
+        <div class="section-shell enquiries-grid">
+          <div>
+            <p class="eyebrow light">Goodwin Wiltshires</p>
+            <h2 id="enquiries-heading">Ram enquiries &amp; farm visits.</h2>
+          </div>
+          <div class="enquiry-copy">
+            <p>Based in Hawke's Bay, New Zealand. Ram availability and viewing by arrangement.</p>
+            <p class="muted">Contact details are intentionally not shown until the real business details are added; the previous site contained placeholders.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-row">
+        <p>© <span data-year>2026</span> Goodwin Wiltshires.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
